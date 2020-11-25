@@ -1,0 +1,11 @@
+ALGORITHM phraseVAR    c : CHAR    
+long, nbWords, nbVow : INTEGER :=0;BEGIN    REPEAT        read(c)        long += 1;       
+ SWITCH (c) DO   
+          case ' ' : nbWords; BREAK;  
+                    case 'a' : nbVow += 1; BREAK; 
+                               case 'e' : nbVow += 1; BREAK;      
+                                     case 'i' : nbVow += 1; BREAK;    
+                                             case 'o' : nbVow += 1; BREAK;      
+                                                   case 'u' : nbVow += 1; BREAK;           
+ case 'y' : nbVow += 1; BREAK;  
+       END_SWITCH    UNTIL (c = '.')    write(long)    write(nbWords)    write(nbVow)END
